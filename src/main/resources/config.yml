@@ -1,0 +1,73 @@
+#      --[ Craft Slot Commands ]--
+
+# Commands to run on click
+# --------------------------------------#
+# If you put * in the start of a command
+# it will be executed by the console.
+# --------------------------------------#
+crafting-slot:
+  # Crafting result slot
+  0: ""
+  # Top left slot
+  1: ""
+  # Top right slot
+  2: ""
+  # Bottom left slot
+  3: ""
+  # Bottom right slot
+  4: ""
+  
+# Items to show in the crafting grid.
+# --------------------------------------#
+# Feature is still experimental and VERY
+# buggy. To enable, you must set to true:
+items-enabled: false
+# NOTE: It's currently not possible
+#       to set the result slot item.
+#
+# Known Bug: You can't pick items up with
+# this feature enabled. To enable an
+# experimental fix for this, please see
+# the bottom of this configuration file.
+# --------------------------------------#
+slot-item:
+  # Top left slot
+  1:
+    material: ARROW
+    name: "&6Stand Arrow &5ゴゴゴ"
+    # CustomModelData
+    #model: 2 
+  # Top right slot
+  2:
+    material: IRON_SWORD
+    name: "&4*Insert Cool Name*"
+    #hide-flags: true
+    #damage: 127
+  # Bottom left slot
+  3:
+    material: DIAMOND
+    name: "&9Diamond is"
+    #unbreakable: true
+  # Bottom right slot
+  4:
+    material: PLAYER_HEAD
+    name: "&dAria's Amazing Head"
+    #lore:
+    # Empty line
+    #- " "
+    #- "&5The player head of a very"
+    #- "&5hot and adorable person! <3"
+    # The UUID of a player
+    #skull-owner-uuid: "99abd3b5-6ccd-47e3-9461-d0f3519c263a"
+    # Texture values can also be used
+    #skull-texture-value: ""
+      
+# Experimental Stuff
+# --------------------------------------#
+# This option uses experimental code
+# to override a Minecraft limitation.
+# This MUST be set to true if using
+# the Slot Items feature or players
+# can't pick up items on the ground.
+# --------------------------------------#
+experimental-pickup: false

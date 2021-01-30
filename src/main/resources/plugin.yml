@@ -1,0 +1,13 @@
+name: CraftSlotCommands
+main: com.asangarin.csc.CraftSlotCommands
+version: 2.2
+author: Aria Sangarin
+api-version: 1.13
+commands:
+    craftslotcommands:
+        description: Admin command for CraftSlotCommands.
+        aliases: [csc]
+permissions:
+    csc.admin:
+        description: Access to the CraftSlotCommands command.
+        default: op
