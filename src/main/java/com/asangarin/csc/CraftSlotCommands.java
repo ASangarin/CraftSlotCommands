@@ -47,7 +47,7 @@ public class CraftSlotCommands extends JavaPlugin implements Listener
 	
 	@EventHandler
     public void inventoryClick(InventoryClickEvent e) {
-    	if(!(e.getInventory() instanceof CraftingInventory) || e.getInventory().getSize() != 5 || e.getRawSlot() > 5) return;
+    	if(!(e.getInventory() instanceof CraftingInventory) || e.getInventory().getSize() != 5 || e.getSlot() > 5 || e.getInventory().getType() != InventoryType.CRAFTING || e.getSlotType() == SlotType.ARMOR || e.getSlotType() == SlotType.CONTAINER || e.getSlotType() == SlotType.FUEL || e.getSlotType() == SlotType.OUTSIDE || e.getSlotType() == SlotType.QUICKBAR) return;
     	e.setCancelled(true);
     	
     	String cmd = getConfig().getString("crafting-slot." + e.getSlot());
